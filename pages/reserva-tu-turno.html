@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="img/lashes-drawing-getdrawingsm-for-personal-use-7.png">
+    <title> Reserva tu turno </title>
+</head>
+<body id="bodyapp">
+ 
+    <header>
+        <nav> 
+            <ul class="barraNav">
+                <li class="fotoindex"> <a href="/index.html"> <img src="/img/lashes-drawing-getdrawingsm-for-personal-use-7.png" alt="logo" width="55" height="55"> </a> </li>
+                <li> <a href="/index.html">Home</a> </li>
+                <li> <a href="servicios.html"> Servicios </a>
+                    <ul>
+                        <li> <a href="servicios.html#pestanas">Pestanas</a></li>
+                        <li> <a href="servicios.html#cejas">Cejas</a></li>
+                        <li> <a href="servicios.html#tratamientosfaciales">Tratamientos Faciales</a></li>
+                    </ul>
+                <li> <a href="precios.html"> Precios </a>
+                <li> <a href="galeria.html"> Galeria </a>
+                <li> <a href="reserva-tu-turno.html"> Reserva tu turno </a>
+             </ul>
+        </nav>
+    </header>
+
+
+
+<!--form p/ reservar turno, no mas q eso-->
+    
+    <section class="turnos">
+
+        <form class="turnos__reservar" action="enviar.php" method="get" enctype="text/plain">  
+
+            <h1>Reserva tu turno </h1>
+
+            <br>
+            
+            <div>
+                <label for="Nombre"> Nombre</label>
+                <input type="text" id="nombre"  placeholder="Ingrese su nomrbre">
+            </div>
+            <br> 
+            <div>
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Ingrese su apellido">
+          
+            </div>
+            <br>
+            <div>
+    
+               <label for="Email"> Email </label>
+               <input type="email" id="Email" placeholder="ingrse su email">
+    
+             </div>
+             <br>
+            <div>
+                <select name="servicio" id="servicio">
+                    <option value="1">Extensiones</option>
+                    <option value="2">Lifting</option>
+                    <option value="3">Cejas</option>
+                    <option value="4">Extensiones + Cejas</option>
+                    <option value="5"> Lifting + cejas </option>
+                    <option value="6"> Limpieza facial</option>
+                </select>
+            </div>
+                
+            </div>
+             <br>
+             <div>
+                 <label for="fecha"> fecha </label>
+                 <input type="date" id="fecha" placeholder="seleccionar fecha">
+            </div>
+             <br>
+             <div>
+                  <label for="horario"> Horario </label>
+                   <input type="time" id="horario" placeholder="seleccionar horario">
+            </div>
+            <br>
+            <div>
+                <h3>Tenes alguna duda? Consultanos.</h3>
+                <textarea name="Consulta" id="consulta" cols="30" rows="5" placeholder="Contanos tu duda"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="sms"> Enviar SMS recordatorio de turno </label>
+                <input type="checkbox" id="SMS">
+                <br>
+                <label for="email"> Enviar Mail de confirmacion de turno</label>
+                <input type="checkbox" id="email">
+            </div>
+            <br>
+            <div>
+                 <input type="submit" value="Reservar turno">
+                 <input type="submit" value="borrar seleccion">
+            </div>
+        </form>
+
+<!--el mapa esta a un constado para que la gente tenga en cuenta la ubicacion al momento de pedir el turno-->
+
+        <div class="turnos__mapa">
+    
+             <h2> Donde encontrarnos?</h2>
+    
+             <iframe src="https:/www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.64511697103!2d-60.840169912483084!3d-32.95212724363193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1651117513587!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+    
+    </section>
+<!--el footer idealmente va a tener mas onda y mas contenido-->
+    <footer>
+        <div class="flink__serv">
+            <h3> Servicios</h3>
+            <ul>
+                <li>
+
+                    <a href="servicios.html#pestanas"> Pestanas</a>
+                </li>
+                <li>
+                    <a href="servicios.html#cejas">Cejas</a>
+                </li>
+                <li>
+                    <a href="servicios.html#tratamientosfaciales">Tratamientos faciales</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flink__nosinfo">
+            <h3> Nosotros</h3>
+            <ul>
+                <li>
+                     <a href="Reserva-tu-turno.html#tunros__mapa">Donde encontrarnos</a>
+                </li>
+                <li>
+                    <a href="Galeria.html#foto__expusuario">Resenas</a>
+                </li>
+                <li>
+                    <a href=""> </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="flink__rs">
+
+            <h3> Encontranos en</h3>
+
+            <ul> 
+                <li>
+                    <a href="https://www.instagram.com/emelashes.ros/" target="_blank"> Instagram.com/emelashesros</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook,com/Emelashesros</a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/message/BAUWXB5JBTWLD1?autoload=1&app_absent=0" target="_blank"> Escribinos en Whatsapp</a>
+                </li>
+            </ul>
+              
+        </div>
+    </footer>
+</body>
+</html>

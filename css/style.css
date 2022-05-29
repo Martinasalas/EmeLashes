@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #ffe8e2;
+    font-family: 'Arima Madurai', cursive;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "div"
+    "footer";
+}
+
+#bodyserv {
+    grid-template-areas: 
+    "header"
+    "subBarraNav"
+    "servTitle"
+    "servPestanas"
+    "servCejas"
+    "servTratFac"
+    "footer";
+}
+
+#bodygal {
+    
+    grid-template-areas: 
+    "header"
+    "fotosgal"
+    "formgal"
+    "footer";
+
+}
+
+#bodyprices{
+    grid-template-areas: 
+    "header"
+    "preciostb"
+    "footer";
+}
+
+#bodyapp {
+    grid-template-areas: 
+    "header"
+    "turno"
+    "footer";
+}
+ 
+/* El header se repite en todas las paginas*/
+
+header {
+    grid-area: header;
+    background-color: #eee6d8;
+    position: sticky;
+    top: 0px;
+    opacity: 90%;
+}
+header nav a { 
+    color: #242020;
+}
+.barraNav {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    font-size: 0;
+    background-color: #eee6d8;
+    justify-content: center;
+    align-items: center;
+}
+.barraNav li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px;
+}
+.barraNav ul{
+    position: absolute;
+    display: none;
+    background-color: #eee6d8;
+}
+.barraNav ul li {
+    display: block;
+}
+.barraNav li:hover ul {
+    display: block;
+}
+
+/* Index - Contenedor de fotos  */
+main .picont {
+    grid-area: main;
+    background-color: #ba4948;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+/* Index - cartas */
+.container {
+    grid-area: div;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.caja {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    background-color: #c89190;
+    width: 350px;
+    height: 650px;
+    border-style: outset;
+}
+
+.caja p {
+    background-color: #ffe8e2;
+    margin: 10px 25px 0px 25px;
+    padding: 5px 5px 5px 5px;
+    overflow-y: scroll;
+}
+
+.caja h3{
+    background-color: #c89190;
+    color: #574C4E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div img {
+    width: 90%;
+    height: 90%;
+    margin: 5% 5% 5% 5%;
+}
+
+.info {
+    background-color: #ba4948;
+    color: #eee6d8;
+    border-style: outset;
+    padding: 20px 20px 20px 20px;
+    margin: 30px 120px 0px 120px;
+    position: center;
+}
+
+/*Servicios*/
+
+
+/* sub header servicios */
+.subBarraNav { 
+    grid-area: subBarraNav;
+    position: sticky;
+    background-color: #574C4E;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+    margin-top: 0px; 
+    position: relative;
+}
+.subBarraNav a {
+    color: #eee6d8;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+section article {
+    background-color: #eee6d8; 
+    border-style: outset;
+    margin: 10px 30px 10px 30px;
+}
+section article a{
+    color: #ba4948;
+}
+.servTitle {
+    grid-area: servTitle;
+}
+.servPestanas {
+    grid-area: servPestanas;
+}
+.servCejas {
+    grid-area: servCejas;
+}
+.servTratFac {
+    grid-area: servTratFac;
+}
+/* Precios */
+
+ .preciostb {
+    grid-area: preciostb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.preciostb div {
+    width: 350px;
+    height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-right: #ffe8e2;
+    border-right-style: solid; 
+    padding-right: 15px ;
+}
+
+.preciotb__col {
+    list-style: none;
+}
+
+.preciotb__col  li{
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #574C4E;
+    border-bottom-style: solid;
+}
+
+.preciotb__title {
+    font-size: 25px;
+    color: #ba4948;
+    list-style: none;
+    border-bottom-style: none;
+}
+
+.preciotb__tiposerv {
+    font-size: 20px;
+}
+
+.preciotb__precioserv {
+    font-size: 20px;
+    text-align: end;
+    color: #ba4948;
+}
+
+/* Galeria */
+.foto__expusuario{
+    grid-area: fotosgal;
+}
+.expusuario{
+    grid-area: formgal;
+    background-color: #c89190;
+    color: #eee6d8;
+}
+.expusuario input{
+    color: #574C4E;
+}
+
+
+
+/* Reserva tu turno */
+.turnos{
+    grid-area: turno;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.turnos__reservar {
+    background-color: #c89190;
+    color: #574C4E;
+    width: 400px;
+    height: 600px;
+    margin: 50px;
+    padding: 35px
+}
+.turnos__mapa {
+    margin: 90px;
+    border-left-style: dotted ; 
+    padding-left: 30px;
+}
+
+/*footer*/
+/*El footer repite estilo en todas las pahginas*/
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #574C4E;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: sticky;
+
+}
+footer ul {
+    list-style: none;
+}
+footer a{
+    padding-left: 5px;
+    color: #eee6d8;
+}
+.flink__rs {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.flink__nosinfo{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+
+}
+
+@media (max-width:1024px) {
+    
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #ffe8e2;
+    font-family: 'Arima Madurai', cursive;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "div"
+    "footer";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caja {
+    background-color: #eee6d8;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+.caja h3 {
+    background-color: #eee6d8;
+    justify-self: center;
+    grid-column: 1/4 ;
+    grid-row: 1/2;
+
+}
+div img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+ .caja p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+ }
+
+ .info { justify-self: center;
+     grid-column: 1/4;
+     grid-row: 3/4;
+ }
+
+
+
+#bodyserv {
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "subBarraNav"
+    "servTitle"
+    "servPestanas"
+    "servCejas"
+    "servTratFac"
+    "footer";
+}
+
+#bodygal {
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "fotosgal"
+    "formgal"
+    "footer";
+
+}
+
+#bodyprices{
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "preciostb"
+    "footer";
+}
+
+.preciostb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bodyapp {
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "turno"
+    "footer";
+}
+.turnos {
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+}
+
+@media (max-width: 600px) {
+    
+    
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #ffe8e2;
+    font-family: 'Arima Madurai', cursive;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "div"
+    "footer";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.caja {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    background-color: #eee6d8;
+    width: fit-content;
+
+}
+ .caja h3 {
+    background-color: #eee6d8;
+    justify-self: center;
+
+}
+
+
+#bodyserv {
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "subBarraNav"
+    "servTitle"
+    "servPestanas"
+    "servCejas"
+    "servTratFac"
+    "footer";
+}
+
+#bodygal {
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "fotosgal"
+    "formgal"
+    "footer";
+
+}
+
+#bodyprices{
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "preciostb"
+    "footer";
+}
+
+.preciostb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bodyapp {
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "turno"
+    "footer";
+}
+.turnos {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.turnos__reservar{
+    width: fit-content;
+}
+}
+
+
