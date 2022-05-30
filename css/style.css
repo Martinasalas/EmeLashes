@@ -187,6 +187,10 @@ section article {
 section article a{
     color: #ba4948;
 }
+
+section article a:hover{
+    color: #242020;
+}
 .servTitle {
     grid-area: servTitle;
 }
@@ -206,6 +210,8 @@ section article a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .preciostb div {
@@ -524,6 +530,27 @@ body{
     width: fit-content;
 }
 }
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
 
 
 
