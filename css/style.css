@@ -119,6 +119,9 @@ main .picont {
     height: 650px;
     border-style: outset;
 }
+.caja:hover{
+    background-color:#eee6d8;
+}
 
 .caja p {
     background-color: #ffe8e2;
@@ -128,7 +131,6 @@ main .picont {
 }
 
 .caja h3{
-    background-color: #c89190;
     color: #574C4E;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -147,6 +149,11 @@ div img {
     padding: 20px 20px 20px 20px;
     margin: 30px 120px 0px 120px;
     position: center;
+}
+.info:hover {
+    background-color: #c89190;
+    color: #574C4E;
+
 }
 
 /*Servicios*/
