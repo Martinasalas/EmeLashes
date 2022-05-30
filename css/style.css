@@ -42,6 +42,7 @@ body{
     grid-template-areas: 
     "header"
     "preciostb"
+    "preciostb"
     "footer";
 }
 
@@ -205,9 +206,6 @@ section article a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    -webkit-animation: slide-bottom 0.5s linear both;
-    animation: slide-bottom 0.5s linear both;
-
 }
 
 .preciostb div {
@@ -298,7 +296,6 @@ footer {
     margin-bottom: 0%;
     margin-left: 0%;
     margin-right: 0%;
-    position: sticky;
 
 }
 footer ul {
@@ -307,6 +304,10 @@ footer ul {
 footer a{
     padding-left: 5px;
     color: #eee6d8;
+}
+
+footer a :hover{
+    color: #ba4948;
 }
 .flink__rs {
     grid-column: 3/4;
@@ -399,6 +400,7 @@ div img {
     min-height: 100%;
     grid-template-areas: 
     "header"
+    "preciostb"
     "preciostb"
     "footer";
 }
@@ -495,6 +497,7 @@ body{
     grid-template-areas: 
     "header"
     "preciostb"
+    "preciostb"
     "footer";
 }
 
@@ -522,27 +525,6 @@ body{
 }
 }
 
-@-webkit-keyframes slide-bottom {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    100% {
-      -webkit-transform: translateY(100px);
-              transform: translateY(100px);
-    }
-  }
-
-@keyframes slide-bottom {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    100% {
-      -webkit-transform: translateY(100px);
-              transform: translateY(100px);
-    }
-}
 
 
 
