@@ -211,7 +211,7 @@ section article a:hover{
     flex-direction: row;
     justify-content: center;
 	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	 animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .preciostb div {
@@ -299,7 +299,7 @@ footer {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     background-color: #574C4E;
-    margin-top: 15% 0% 0% 0%;
+    margin-top: 15%;
 
 }
 footer ul {
@@ -310,7 +310,7 @@ footer a{
     color: #eee6d8;
 }
 
-footer a :hover{
+footer a:hover{
     color: #ba4948;
 }
 .flink__rs {
