@@ -299,9 +299,7 @@ footer {
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     background-color: #574C4E;
-    margin-bottom: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-top: 15% 0% 0% 0%;
 
 }
 footer ul {
